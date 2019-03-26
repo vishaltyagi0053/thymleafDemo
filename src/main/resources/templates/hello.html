@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Thymeleaf</title>
+</head>
+<body>
+<ul><li>Sanajeev Jha</li>
+
+<!--/*@thymesVar id="name" type=""*/-->
+<li th:text="${user.name}"></li></ul>
+<h4 th:text="#{hello.world}">Hello Thymeleaf!</h4>
+<ul th:each="val,idx:${list}"><li th:text="${idx.odd}"></li></ul>
+</body>
+</html>
